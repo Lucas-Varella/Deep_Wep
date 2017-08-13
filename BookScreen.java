@@ -37,7 +37,7 @@ public class BookScreen {
 			keyboard.nextLine();
 			String bookName = keyboard.nextLine();
 			owner.addBook(bookName);
-			System.out.println("Book " + bookName + " added!");
+			System.out.println("Book '" + bookName + "' added!");
 			int choice = 0;
 			System.out.println("Input 1 to go back, or 0 to exit.");
 			choice = keyboard.nextInt();
@@ -61,6 +61,30 @@ public class BookScreen {
 		}	
 		if (option == 5) {
 			owner.showMainMenu();
+		}	
+		if (option == 4) {
+			System.out.println("Please input book's name for deletion.");
+			keyboard.nextLine();
+			String bookName = keyboard.nextLine();
+			String choice = "X";
+			System.out.println("Are you sure you want to delete this book?");
+			System.out.println("Y / N");
+			choice = keyboard.next();
+			if(choice.equals('Y') || choice.equals("y")) {
+				owner.deleteBook(bookName);
+				System.out.println("Book '" + bookName + "' deleted from database!");
+				int choice1 = 0;
+				System.out.println("Input 1 to go back, or 0 to exit.");
+				choice1 = keyboard.nextInt();
+				if(choice1 == 1) {
+					owner.showBookMenu();
+				}else if(choice1 == 0) {
+					System.out.println("Goodbye!");
+				}
+			}else if(choice.equals("N") || choice.equals("n")) {
+				owner.showBookMenu();
+			}
+			
 		}	
 		
 	}
