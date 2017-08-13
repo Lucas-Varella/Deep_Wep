@@ -1,8 +1,10 @@
 package exercise2;
 
+import java.util.ArrayList;
+
 public class BookList {
 	
-	String[] books;
+	ArrayList<String> books = new ArrayList<String>();
 	int bookNumber = 0;
 	private BookCtrl owner;
 	
@@ -14,8 +16,14 @@ public class BookList {
 
 	public void addBook(String bookName) {
 		bookNumber++;
-		String bookIndex = bookNumber + bookName;
-		books[bookNumber - 1] = bookIndex;
+		String bookIndex = bookNumber + ". " + bookName;
+		books.add(bookIndex);
+	}
+
+
+	public void showBookList() {
+		System.out.println(books);
+		
 	}
 
 }
