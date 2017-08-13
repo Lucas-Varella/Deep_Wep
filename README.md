@@ -3,5 +3,5 @@
 
 >> Lucas - Currently working on being able to delete books from list.
 
-# 2DO - Selecting books from BookList to view details and stuff... (includes creating "Book" class, etc...) 
+# 2DO - Creating and implementing the class Book (in deletebook(), addbook(), booklist()<(partially done), etc.)
 
