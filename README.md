@@ -1,6 +1,4 @@
 # Deep_Wep
->> Lucas - Atualmente editando BookScreen / BookCtrl, especificamente o set-up do scanner.//
+>> Lucas - addBook(bookName), showBookList() now working. >>and printing with line breaks.
 
->> Lucas - addBook(bookName), showBookList() agora funcionando. >>printando com quebra de linha.
-
-# 2DO - Poder selecionar livros na lista para ver os detalhes (criar classe livro, etc...)
+# 2DO - Selecting books from BookList to view details and stuff... (includes creating "Book" class, etc...)
