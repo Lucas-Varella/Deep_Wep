@@ -14,6 +14,9 @@ public class BookCtrl {
 	public void showBookMenu() {
 		bookScreen.showBookMenu();
 	}
+	public void addBook(String bookName){
+		
+	}
 	
 	
 
@@ -22,3 +25,4 @@ public class BookCtrl {
 	
 
 }
+
