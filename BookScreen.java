@@ -34,7 +34,8 @@ public class BookScreen {
 		option = keyboard.nextInt();
 		if (option == 1) {
 			System.out.println("Please input book's name.");
-			String bookName = keyboard.next();
+			keyboard.nextLine();
+			String bookName = keyboard.nextLine();
 			owner.addBook(bookName);
 			System.out.println("Book " + bookName + " added!");
 			int choice = 0;
