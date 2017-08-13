@@ -3,4 +3,4 @@
 
 >> Lucas - addBook(bookName), showBookList() agora funcionando. >>printando com quebra de linha.
 
-# TODO - Poder selecionar livros na lista para ver os detalhes (criar classe livro, etc...)
+# 2DO - Poder selecionar livros na lista para ver os detalhes (criar classe livro, etc...)
