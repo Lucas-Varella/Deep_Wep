@@ -28,6 +28,11 @@ public class BookCtrl {
 	public void showMainMenu() {
 		owner.start();
 	}
+
+	public void deleteBook(String bookName) {
+		bookList.deleteBook(bookName);
+		
+	}
 	
 	
 
