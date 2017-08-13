@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class BookList {
 	
-	ArrayList<String> books = new ArrayList<String>();
+	ArrayList<Book> books = new ArrayList<Book>();
+	//bookNumber keeps track of how many books there are. it's also used for indexes!
 	int bookNumber = 0;
 	private BookCtrl owner;
 	
@@ -14,16 +15,26 @@ public class BookList {
 	}
 
 
-	public void addBook(String bookName) {
+	public void addBook(Book book) {
 		bookNumber++;
-		String bookIndex = bookNumber + ". " + bookName;
-		books.add(bookIndex);
+		books.add(book);
 	}
 
 
 	public void showBookList() {
-	for(int i = 0; i < bookNumber ; i++) {
-		System.out.println(books.get(i));
+		System.out.println("There are currently " + bookNumber + " Books ::");
+		for(int i = 0; i < bookNumber ; i++) {
+			int bookIndex = i + 1;
+			System.out.println(bookIndex + ". - " + books.get(i).getName());
+		}
+		
+		
+	}
+
+
+	public void deleteBook(String bookName) {
+		books.remove(bookName);
+		bookNumber--;
 	}
 
 }
