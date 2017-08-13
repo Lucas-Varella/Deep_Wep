@@ -23,16 +23,19 @@ public class BookScreen {
 		System.out.println("2. Alter Book");
 		System.out.println("3. Book List");
 		System.out.println("4. Del. Book");
+		System.out.println("5. Main Menu");
+
+		
 		
 		int option = 0;
 		
-		//Aqui eu só copiei e colei o processo de scanner de MainScreen...
-		//ainda vou continuar a mexer nisso.
 		
 		System.out.println("Please input desired Option (1-4) ::");
 		option = keyboard.nextInt();
 		if (option == 1) {
-			owner.showBookMenu();
+			System.out.println("Please input book's name.");
+			String bookName = keyboard.next();
+			bookList.addBook(bookName);
 		}	
 		
 	}
