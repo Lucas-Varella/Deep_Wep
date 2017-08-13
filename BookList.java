@@ -22,8 +22,8 @@ public class BookList {
 
 
 	public void showBookList() {
-		System.out.println(books);
-		
+	for(int i = 0; i < bookNumber ; i++) {
+		System.out.println(books.get(i));
 	}
 
 }
