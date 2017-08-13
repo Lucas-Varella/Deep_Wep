@@ -49,6 +49,14 @@ public class BookScreen {
 		}	
 		if (option == 3) {
 			owner.showBookList();
+			int choice = 0;
+			System.out.println("Input 1 to go back, or 0 to exit.");
+			choice = keyboard.nextInt();
+			if(choice == 1) {
+				owner.showBookMenu();
+			}else if(choice == 0) {
+				System.out.println("Goodbye!");
+			}
 		}	
 		if (option == 5) {
 			owner.showMainMenu();
