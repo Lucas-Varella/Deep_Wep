@@ -20,6 +20,14 @@ public class BookCtrl {
 	public void addBook(String bookName){
 		bookList.addBook(bookName);
 	}
+
+	public void showBookList() {
+		bookList.showBookList();
+	}
+
+	public void showMainMenu() {
+		owner.start();
+	}
 	
 	
 
