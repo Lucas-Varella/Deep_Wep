@@ -1,6 +1,3 @@
-package exercise2;
-import java.util.Scanner;
-
 public class MainScreen {
 	
 	private Scanner keyboard;
@@ -27,6 +24,8 @@ public class MainScreen {
 		option = keyboard.nextInt();
 		if (option == 1) {
 			owner.showBookMenu();
+		} else if (option == 2) {
+			owner.showFriendMenu();
 		}
 		
 	}
