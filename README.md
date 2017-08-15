@@ -5,5 +5,5 @@
 
 >> Marcos - Partial Friend implentation (List, Ctrl, Screen, none complete)
 
-# 2DO - Creating and implementing the class Book (in deletebook(), addbook(), booklist()<(partially done), etc.)
+# 2DO - Creating and implementing the class Book (in deletebook(), etc.)
 
