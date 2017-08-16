@@ -17,9 +17,10 @@ public class BookCtrl {
 	public void showBookMenu() {
 		bookScreen.showBookMenu();
 	}
-	public void addBook(String bookName){
-		bookList.addBook(bookName);
+	public void addBook(){
+		bookList.addBook();
 	}
+	
 
 	public void showBookList() {
 		bookList.showBookList();
@@ -29,15 +30,9 @@ public class BookCtrl {
 		owner.start();
 	}
 
-	public void deleteBook(String bookName) {
-		bookList.deleteBook(bookName);
+	public void deleteBook(String bookTitle) {
+		bookList.deleteBook(bookTitle);
 		
 	}
-	
-	
-
-	
-	
-	
 
 }
