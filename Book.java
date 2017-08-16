@@ -1,10 +1,20 @@
+
 package exercise2;
 
-public class Book {
+import java.util.ArrayList;
 
-	public int getName() {
-		// TODO Auto-generated method stub
-		return 0;
+public class Exercise2 {
+	
+	public static void main(String[] args) {
+		MainController mainCtrl = new MainController();
+		mainCtrl.start();
+		
+		Friend friend = new Friend();
+		
+		friend.setName("Gerso");
+		friend.setPhone(6969);
+		
+		ArrayList<Friend> friends = new ArrayList<Friend>();
 	}
 
 }
